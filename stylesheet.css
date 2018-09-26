@@ -1,5 +1,27 @@
 body {
-    height: 1920p;
-    width: 1080p;
+    height:100vh;
     background-color: #2b65c4;
+}
+#main-container {
+    position:relative;
+    left:10%;
+    top:10%;
+    height:70%;
+    width:80%;
+    background-color: #7FDBFF; 
+    border-style: solid;
+    border-width: 5px;
+    border-color: #39CCCC;
+    padding: 20px; 
+    border-radius: 25px;
+}
+#papajak {
+    float:left;
+    border:1px solid grey;
+}
+#text1 {
+    position:    relative;
+    left:10%;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
 }
