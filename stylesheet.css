@@ -18,13 +18,12 @@ body {
 }
 #papajak {
     float:left;
-    border:1px solid grey;
-    max-width:100%;
+    width: 40vw;
     height:auto;
 }
 #text1 {
     position:    relative;
-    left:10%;
+    left:6%;
     font-family: 'Anton', sans-serif;
     font-size: 5vw;
 }
