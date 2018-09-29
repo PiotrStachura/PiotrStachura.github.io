@@ -1,12 +1,13 @@
 body {
-    height:100vh;
+    height:100vw;
     background-color: #2b65c4;
 }
 #main-container {
     position:relative;
     left:10%;
     top:10%;
-    height:70%;
+    max-width:100%;
+    height:40vw;
     width:80%;
     background-color: #7FDBFF; 
     border-style: solid;
@@ -18,10 +19,12 @@ body {
 #papajak {
     float:left;
     border:1px solid grey;
+    max-width:100%;
+    height:auto;
 }
 #text1 {
     position:    relative;
     left:10%;
     font-family: 'Anton', sans-serif;
-    font-size: 50px;
+    font-size: 5vw;
 }
