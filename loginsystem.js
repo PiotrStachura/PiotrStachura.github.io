@@ -41,6 +41,7 @@ $("loginbutton").addEventListener("click",()=>{
 
 })
 
-$("loginbutton").addEventListener("click",()=>{
+$("logoutbutton").addEventListener("click",()=>{
     firebase.auth().signOut();
+    $("user_div").style.display="none";
 })
