@@ -36,7 +36,12 @@ function calc_clear(){
     return temp;
 }
 function calc_backspace(){
+    if(calc_display_getSTR()!="Infinity"){
     $("ekran").innerText=$("ekran").innerText.substr(0,$("ekran").innerText.length-1);
+    }
+    else{
+        calc_clear();
+    }
 }
 
 //Event listeners
@@ -70,7 +75,20 @@ $("btn--").addEventListener("click",()=>{
     current_operation="-";
     calc_memdisplay();
     }
+    if(current_operation==""&&calc_display_getSTR()==""){
+        calc_mem=0;
+        current_operation="-";
+        calc_memdisplay();
+    }
 });
+
+$("btn-neg").addEventListener("click", ()=>{
+    if(calc_display_getSTR()!=""){
+        let temp = calc_display_get();
+        temp =-temp;
+        calc_display(temp);
+    }
+})
 
 $("btn-*").addEventListener("click",()=>{
     if(current_operation!="*"&&calc_display_getSTR()!=""){
