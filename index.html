@@ -15,7 +15,7 @@
             <a href="#" class="pure-menu-heading pure-menu-link header-menu-home">Home</a>
             <ul class="pure-menu-list header-menu-list">
                 <li class="pure-menu-item" id="menu-calc"><a href="#" class="pure-menu-link header-menu-item">Kalkulator</a></li>
-                <li class="pure-menu-item" id="loginbuttton"><a href="#" class="pure-menu-link header-menu-item">Login</a></li>
+                <li class="pure-menu-item" id="loginselect"><a href="#" class="pure-menu-link header-menu-item">Login</a></li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
                     <h3>Zaloguj się</h3>
                     <input type="email" placeholder="Email..." id="email_field" />
                     <input type="password" placeholder="Hasło..." id="password_field" />
-                    <button onclick="login()">Login to Account</button>
+                    <button id="loginbutton">Login to Account</button>
                 </div>
                 
                 <div id="user_div" class="loggedin-div">
@@ -78,7 +78,7 @@
         </div>
     </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script type="text/javascript" src="firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
         <script type="text/javascript" src="calculator.js"></script>
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="loginsystem.js"></script>
