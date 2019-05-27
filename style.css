@@ -57,3 +57,6 @@
 .inner{
     float:left;
 }
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
