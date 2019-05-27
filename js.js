@@ -156,3 +156,10 @@ $("btn-sqrt").addEventListener("click",()=>{
         calc_display(temp);
     }
 })
+$("btn-sq").addEventListener("click",()=>{
+    if(calc_display_getSTR()!=""){
+        let temp = calc_display_get();
+        temp =Math.pow(temp,2);
+        calc_display(temp);
+    }
+})
