@@ -58,5 +58,5 @@
     float:left;
 }
 .disable-dbl-tap-zoom {
-  touch-action: none;
+  touch-action: manipulation;
 }
