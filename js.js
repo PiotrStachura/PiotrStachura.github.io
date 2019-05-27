@@ -24,7 +24,9 @@ function calc_display_getSTR(){
 }
 function calc_append(str){
     $("ekran").innerText+=str;
-    current_memory+=parseFloat(str);
+}
+function calc_appendstr(str){
+    $("ekran").innerText+=str;
 }
 function calc_clear(){
     let temp = $("ekran").innerText;
@@ -32,7 +34,6 @@ function calc_clear(){
     calc_mem=0;
     calc_memdisplay();
     current_operation="";
-    current_memory=0;
     return temp;
 }
 function calc_backspace(){
@@ -57,7 +58,6 @@ $("btn-Backspace").addEventListener("click",()=>{
     calc_backspace();
 });
 
-var current_memory=0;
 var calc_mem=0;
 var current_operation="";
 
@@ -74,11 +74,6 @@ $("btn--").addEventListener("click",()=>{
     calc_mem=parseFloat(calc_clear());
     current_operation="-";
     calc_memdisplay();
-    }
-    if(current_operation==""&&calc_display_getSTR()==""){
-        calc_mem=0;
-        current_operation="-";
-        calc_memdisplay();
     }
 });
 
@@ -140,3 +135,24 @@ $("btn-Calculate").addEventListener("click",()=>{
         break;
     }
 });
+
+$("btn-.").addEventListener("click",()=>{
+    if(calc_display_getSTR()!=""){
+        calc_appendstr(".");
+    }
+})
+
+$("btn-%").addEventListener("click",()=>{
+    if(calc_display_getSTR()!=""){
+        let temp = calc_display_get();
+        temp =temp/100;
+        calc_display(temp);
+    }
+})
+$("btn-sqrt").addEventListener("click",()=>{
+    if(calc_display_getSTR()!=""){
+        let temp = calc_display_get();
+        temp =Math.sqrt(temp);
+        calc_display(temp);
+    }
+})
