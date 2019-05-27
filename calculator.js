@@ -1,7 +1,3 @@
-document.getElementById("menu-calc").addEventListener("click", ()=>{
-    document.getElementById("calc").style.display="block";
-})
-
 //calculator functions
 function $(id) {
 	return document.getElementById(id);
