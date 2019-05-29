@@ -66,11 +66,16 @@ input, button {
     font-weight: 700;
 }
 .main-div, .loggedin-div {
-    width: 20%;
+    width: 250px;
     margin: 0px auto;
     margin-top: 150px;
     padding: 20px;
     display: none;
+    position: absolute;
+    left:50%;
+    top:30%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .main-div input {
     display: block;
